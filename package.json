@@ -15,6 +15,7 @@
   "author": "Morozov Igor https://github.com/IgorTheCreator",
   "license": "ISC",
   "dependencies": {
+    "@fastify/cors": "^9.0.1",
     "@fastify/redis": "^6.2.0",
     "close-with-grace": "^1.3.0",
     "dotenv": "^16.4.5",
