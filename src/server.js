@@ -5,7 +5,7 @@ import { options } from './config/server-options.js'
 const app = await build(options)
 
 app.listen({
-  port: process.env.PORT || 3000,
+  port: process.env.PORT || 3000
 })
 
 closeWithGrace(async function ({ err }) {

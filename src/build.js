@@ -1,15 +1,17 @@
 import Fastify from 'fastify'
-import redisPlugin from './plugins/redis-data-source.js'
 import 'dotenv/config'
+import redisPlugin from './plugins/redis-data-source.js'
 import corsPlugin from './plugins/cors.js'
+import errorHandlerPlugin from './plugins/error-handler.js'
 
 export async function build(options) {
-  // Create app instance
+  // Creating app instance
   const app = Fastify(options)
 
-  // Register plugins
+  // Registering plugins
   app.register(redisPlugin)
   app.register(corsPlugin)
+  app.register(errorHandlerPlugin)
 
   return app
 }
