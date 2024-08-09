@@ -15,9 +15,11 @@
   "author": "Morozov Igor https://github.com/IgorTheCreator",
   "license": "ISC",
   "dependencies": {
+    "@fastify/redis": "^6.2.0",
     "close-with-grace": "^1.3.0",
     "dotenv": "^16.4.5",
-    "fastify": "^4.28.1"
+    "fastify": "^4.28.1",
+    "fastify-plugin": "^4.5.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.4",
