@@ -8,4 +8,4 @@ async function redisPlugin(fastify, options) {
   })
 }
 
-export default fp(redisPlugin)
+export default fp(redisPlugin, { name: 'redis-plugin' })

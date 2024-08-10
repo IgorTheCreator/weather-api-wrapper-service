@@ -7,4 +7,4 @@ async function corsPlugin(fastify, options) {
   })
 }
 
-export default fp(corsPlugin)
+export default fp(corsPlugin, { name: 'cors-plugin' })
