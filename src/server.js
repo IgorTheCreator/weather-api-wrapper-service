@@ -1,8 +1,8 @@
 import closeWithGrace from 'close-with-grace'
 import { build } from './build.js'
-import { options } from './config/server-options.js'
+import { serverOptions } from './config/server-options.js'
 
-const app = await build(options)
+const app = await build(serverOptions)
 
 app.listen({
   port: process.env.PORT || 3000

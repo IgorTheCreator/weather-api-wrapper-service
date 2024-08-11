@@ -1,10 +1,10 @@
 import fp from 'fastify-plugin'
 import fastifyRedis from '@fastify/redis'
 
-async function redisPlugin(fastify, options) {
+async function redisPlugin (fastify, options) {
   fastify.register(fastifyRedis, {
     host: process.env.REDIS_HOST,
-    port: process.env.REDIS_PORT,
+    port: process.env.REDIS_PORT
   })
 }
 

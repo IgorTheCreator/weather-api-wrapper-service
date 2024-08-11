@@ -1,4 +1,4 @@
-export const options = {
+export const serverOptions = {
   logger: {
     transport: {
       target: 'pino-pretty'

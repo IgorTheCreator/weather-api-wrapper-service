@@ -64,3 +64,5 @@ typings/
 
 demo/*
 .vscode/
+
+.tap

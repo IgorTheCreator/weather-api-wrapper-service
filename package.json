@@ -6,10 +6,10 @@
   "scripts": {
     "lint": "standard",
     "lint:fix": "standard --fix",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tap test/**/**.test.js",
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
-    "redis:start": "docker -d -p 6379:6379 --rm --name weather-api-redis redis",
+    "redis:start": "docker run -d -p 6379:6379 --rm --name weather-api-redis redis",
     "redis:stop": "docker stop weather-api-redis"
   },
   "author": "Morozov Igor https://github.com/IgorTheCreator",
@@ -20,11 +20,13 @@
     "close-with-grace": "^1.3.0",
     "dotenv": "^16.4.5",
     "fastify": "^4.28.1",
-    "fastify-plugin": "^4.5.1"
+    "fastify-plugin": "^4.5.1",
+    "got": "^14.4.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.4",
     "pino-pretty": "^11.2.2",
-    "standard": "^17.1.0"
+    "standard": "^17.1.0",
+    "tap": "^21.0.0"
   }
 }
