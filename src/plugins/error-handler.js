@@ -1,6 +1,6 @@
 import fp from 'fastify-plugin'
 
-async function errorHandlerPlugin(fastify, options) {
+async function errorHandlerPlugin (fastify, options) {
   fastify.setErrorHandler((err, req, reply) => {
     if (reply.statusCode >= 500) {
       req.log.error({ req, res: reply, err }, err?.message)
